@@ -34,7 +34,6 @@
         },
         "tool-vice": {
             "type": "tool",
-            "optional": true,
             "version": "https://github.com/pr1metine/pio-tool-vice-macos.git"
         }
     }
