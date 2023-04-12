@@ -18,7 +18,7 @@ env.Replace(
     OBJCOPY="llvm-objcopy",
     RANLIB="llvm-ranlib",
 
-    UPLOADER=join("$PIOPACKAGES_DIR", "tool-vice", "bin", "x64sc"),
+    UPLOADER=join("$PLATFORMIO_PACKAGES_DIR", "tool-vice", "bin", "x64sc"),
     UPLOADCMD="$UPLOADER $SOURCES"
 )
 
