@@ -1,0 +1,26 @@
+{
+    "name": "mos",
+    "title": "MOS",
+    "description": "Development platform for MOS 65xx microprocessors",
+    "homepage": "https://llvm-mos.org/wiki/Welcome",
+    "license": "Apache-2.0",
+    "keywords": ["6502", "MOS", "Atari", "Commodore"],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/pr1metine/platform-mos.git"
+    },
+    "version": "0.1.0",
+    "frameworks": {
+      "llvm-mos-sdk": {
+        "package": "framework-llvm-mos-sdk",
+        "script": "builder/frameworks/llvm-mos-sdk.py"
+      }
+    },
+    "packages": {
+      "toolchain-llvm-mos": {
+        "type": "toolchain",
+        "owner": "pr1metine",
+        "version": "https://github.com/pr1metine/pio-toolchain-llvm-mos-macos.git"
+      }
+    }
+  }

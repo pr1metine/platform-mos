@@ -1,0 +1,27 @@
+{
+    "build": {
+        "extra_flags": "-DHELLO_PLATFORMIO",
+        "f_cpu": "16000000L",
+        "hwids": [
+            [
+                "0x1234",
+                "0x0013"
+            ],
+            [
+                "0x4567",
+                "0x0013"
+            ]
+        ],
+        "mcu": "%MCU_TYPE_HERE%"
+    },
+    "frameworks": [
+        "llvm-mos-sdk"
+    ],
+    "name": "Generic Commodore 64",
+    "upload": {
+        "maximum_ram_size": 2048,
+        "maximum_size": 32256
+    },
+    "url": "http://example.com",
+    "vendor": "MyCompany"
+}
