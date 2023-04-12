@@ -55,10 +55,10 @@ env.Append(
 #
 target_elf = env.BuildProgram()
 
-#
-# Target: Build the .bin file
-#
-target_bin = env.ElfToBin(join("$BUILD_DIR", "firmware"), target_elf)
+# #
+# # Target: Build the .bin file
+# #
+# target_bin = env.ElfToBin(join("$BUILD_DIR", "firmware"), target_elf)
 
 # #
 # # Target: Upload firmware
@@ -69,4 +69,4 @@ target_bin = env.ElfToBin(join("$BUILD_DIR", "firmware"), target_elf)
 #
 # Target: Define targets
 #
-Default(target_bin)
+Default(target_elf)
