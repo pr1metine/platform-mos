@@ -29,12 +29,12 @@
         },
         "toolchain-llvm-mos": {
             "type": "toolchain",
-            "owner": "pr1metine",
-            "version": "https://github.com/pr1metine/pio-toolchain-llvm-mos-macos.git"
+            "version": "https://github.com/pr1metine/pio-toolchain-llvm-mos-windows.git"
         },
         "tool-vice": {
             "type": "tool",
-            "version": "https://github.com/pr1metine/pio-tool-vice-macos.git"
+            "optional": false,
+            "version": "https://github.com/pr1metine/pio-tool-vice-windows.git"
         }
     }
 }
