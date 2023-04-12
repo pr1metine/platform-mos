@@ -21,7 +21,7 @@ env.Replace(
     OBJCOPY="llvm-objcopy",
     RANLIB="llvm-ranlib",
 
-    UPLOADER=join(VICE_DIR, "tool-vice", "bin", "x64sc"),
+    UPLOADER=join(VICE_DIR, "bin", "x64sc"),
     UPLOADCMD="$UPLOADER $SOURCES"
 )
 
