@@ -7,6 +7,9 @@ from os.path import join
 from SCons.Script import AlwaysBuild, Builder, Default, DefaultEnvironment
 
 env = DefaultEnvironment()
+platform = env.PioPlatform()
+
+VICE_DIR = platform.get_package_dir("tool-vice")
 
 # A full list with the available variables
 # http://www.scons.org/doc/production/HTML/scons-user.html#app-variables
@@ -18,7 +21,7 @@ env.Replace(
     OBJCOPY="llvm-objcopy",
     RANLIB="llvm-ranlib",
 
-    UPLOADER=join("$PLATFORMIO_PACKAGES_DIR", "tool-vice", "bin", "x64sc"),
+    UPLOADER=join(VICE_DIR, "tool-vice", "bin", "x64sc"),
     UPLOADCMD="$UPLOADER $SOURCES"
 )
 
