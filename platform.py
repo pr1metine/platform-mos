@@ -7,7 +7,7 @@ IS_WINDOWS = sys.platform.startswith("win")
 IS_LINUX = sys.platform.startswith("linux")
 IS_MAC = sys.platform.startswith("darwin")
 
-class MOSPlatform(PlatformBase):
+class MosPlatform(PlatformBase):
     def get_boards(self, id_=None):
         result = super().get_boards(id_)
         return result
