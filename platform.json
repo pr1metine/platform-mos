@@ -25,7 +25,7 @@
         "framework-llvm-mos-sdk": {
             "type": "framework",
             "optional": true,
-            "version": "*"
+            "version": "https://github.com/pr1metine/llvm-mos-sdk.git"
         },
         "toolchain-llvm-mos": {
             "type": "toolchain",
