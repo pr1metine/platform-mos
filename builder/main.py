@@ -18,7 +18,7 @@ env.Replace(
     OBJCOPY="llvm-objcopy",
     RANLIB="llvm-ranlib",
 
-    UPLOADER=join("$PIOPACKAGES_DIR", "tool-bar", "uploader"),
+    UPLOADER=join("$PIOPACKAGES_DIR", "tool-vice", "bin", "x64sc"),
     UPLOADCMD="$UPLOADER $SOURCES"
 )
 
@@ -60,11 +60,11 @@ target_elf = env.BuildProgram()
 # #
 # target_bin = env.ElfToBin(join("$BUILD_DIR", "firmware"), target_elf)
 
-# #
-# # Target: Upload firmware
-# #
-# upload = env.Alias(["upload"], target_bin, "$UPLOADCMD")
-# AlwaysBuild(upload)
+#
+# Target: Upload firmware
+#
+upload = env.Alias(["upload"], target_elf, "$UPLOADCMD")
+AlwaysBuild(upload)
 
 #
 # Target: Define targets
